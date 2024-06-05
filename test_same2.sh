@@ -12,5 +12,5 @@ ERROR_EXIT () {
 
 # テスト開始
 # teat1: 引数の数が⾜りない
-./same.sh 2> $tmp-ans && ERROR_EXIT "error in test1-1" # エラーメッセージを関数に渡す
+./same2.sh 2> $tmp-ans && ERROR_EXIT "error in test1-1" # エラーメッセージを関数に渡す
 diff $tmp-ans $tmp-args || ERROR_EXIT "error in test1-2"
